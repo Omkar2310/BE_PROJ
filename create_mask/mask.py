@@ -9,24 +9,24 @@ from PIL import Image, ImageFile
 # import matplotlib.image as mpimg
 
 # image_path = 'dataset/00000051.jpg'
-# image_path = 'me.jpg'
+#image_path = 'pic_5.png'
 
-# mask_path = os.path.join(os.getcwd(),"create_mask/mask.png")
+#mask_path = 'mask.png'
 
-# mask_list = []
+#mask_list = []
 
-# default_path = os.path.join(os.getcwd(),"create_mask/mask.png")
-# white_path = os.path.join(os.getcwd(),"create_mask/white.png")
-# # blue_path = os.path.join(os.getcwd(),"create_mask/blue.png")
-# black_path = os.path.join(os.getcwd(),"create_mask/black.png")
+#default_path = os.path.join(os.getcwd(),"mask.png")
+#white_path = os.path.join(os.getcwd(),"white.png")
+#blue_path = os.path.join(os.getcwd(),"blue.png")
+#black_path = os.path.join(os.getcwd(),"black.png")
 
-# mask_list.append(default_path)
-# mask_list.append(white_path)
-# # mask_list.append(blue_path)
-# mask_list.append(black_path)
+#mask_list.append(default_path)
+#mask_list.append(white_path)
+#mask_list.append(blue_path)
+#mask_list.append(black_path)
 
-# mask_path = random.choice(mask_list)
-# print(mask_path)
+#mask_path= random.choice(mask_list)
+#print(mask_path)
 
 
 def create_mask(image_path,mask_path):
@@ -134,8 +134,8 @@ def mask_face(face_landmark, mask_img,face_img,pic_path):
     box_y = center_y + int(offset * np.sin(radian)) - rotated_mask_img.height // 2
 
     face_img.paste(rotated_mask_img,(box_x,box_y),rotated_mask_img)
-    # face_img.save('test.png')
-    # face_img.show()
+    #face_img.save('test.png')
+    #face_img.show()
 
     path = pic_path.split(os.path.sep)
     name = path[-2]
@@ -157,8 +157,8 @@ def get_distance_from_point_to_line(point, line_point1, line_point2):
     return int(distance)
 
 
-# create_mask(image_path)
-# plt.imshow(mpimg.imread('test.jpg'))
-# plt.show()
+#create_mask(image_path)
+#plt.imshow(mpimg.imread('test.jpg'))
+#plt.show()
 
 

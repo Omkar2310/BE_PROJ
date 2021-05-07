@@ -73,7 +73,7 @@ for (i,imagePath) in tqdm(enumerate(imagePaths),total=len(imagePaths)):
 
     face_image = cv2.imread(face_path)
     (h,w) = image.shape[:2]
-
+    #preprocess of the image perform scaling mean substracn
     imageBlob = cv2.dnn.blobFromImage(cv2.resize(face_image,(300,300)),1.0,(300,300),(104.0,177.0,123.0),swapRB=False,crop=False)
 
 
