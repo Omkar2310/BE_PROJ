@@ -4,9 +4,9 @@ PARTIAL FACE RECOGNITION USING DEEP LEARNING
 Steps to run the current project
 
 1) Create a dataset folder with individual_name -> pics(without mask)
-2) we have generate_databasepy file run it, it converts dataset to masked dataset.
-3)then get dataset_with_mask.zip file upload it to colab on train.ipynb
-4) run all commands then at one point after
+2) We have generate_databasepy file run it, it converts dataset to masked dataset.
+3) Then get dataset_with_mask.zip file upload it to colab on train.ipynb
+4) Run all commands then at one point after
 
 learn.export() line we get a export.pkl file it is our model for corresponding dataset
 
