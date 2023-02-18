@@ -28,3 +28,4 @@ pred_class //this gives tensor
 
 classNames[preds_idx]	//given name like omkar,donald trump ...etc
 
+![](https://github.com/Omkar2310/BE_PROJ/BE_PROJ_DEMO2.gif)
